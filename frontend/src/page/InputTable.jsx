@@ -12,166 +12,166 @@ import usePostReport from "../hooks/usePostReport.js";
 import List from "../blocks/List/List.jsx";
 import { flushSync } from "react-dom";
 
-const InputTable = () => {
-  const initialState = {
-    companyName: "",
-    date: "",
-    intangibleAssets: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    basicMeans: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    investmentProperty: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    longTermFinancialInvestments: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    deferredTaxAssets: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    otherNonCurrentAssets: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    reserves: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    currentFinancialInvestments: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    moneyAndEquivalents: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    otherCurrentAssets: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    registeredCapital: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    additionalCapital: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    reserveCapital: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    deferredTaxLiabilities: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    longTermBankLoans: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    targetFunding: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    shortTermBankLoans: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    currentProvisions: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    deferredIncome: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    otherCurrentLiabilities: {
-      startOfPeriod: 0,
-      endOfPeriod: 0,
-    },
-    netIncomeFromProductSales: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    costOfGoodsSold: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    grossProfit: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    grossLoss: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    otherOperatingIncome: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    operatingProfit: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    operatingLoss: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    profitBeforeTax: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    lossBeforeTax: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    netProfit: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    netLoss: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    otherComprehensiveIncomeBeforeTax: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    incomeTaxRelatedToOtherComprehensiveIncome: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    otherComprehensiveIncomeAfterTax: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    averageAnnualNumberOfCommonShares: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    netProfitLossPerCommonShare: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    dividendsPerCommonShare: {
-      forTheReportingPeriod: 0,
-      fromTheReportingPeriodOfLastYear: 0,
-    },
-    termOfExistenceOfTheEnterprise: 0,
-    gradationOfProfitAndLossAnalysis: 0,
-    largestAmountOfCreditReceivedAndReturned: 0,
-    amountOfRequestedLoan: 0,
-    amountOfOwnFundsInTheInvestment: 0,
-    valueOfOwnLiquidAssets: 0,
-  };
+const initialState = {
+  companyName: "",
+  date: "",
+  intangibleAssets: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  basicMeans: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  investmentProperty: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  longTermFinancialInvestments: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  deferredTaxAssets: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  otherNonCurrentAssets: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  reserves: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  currentFinancialInvestments: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  moneyAndEquivalents: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  otherCurrentAssets: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  registeredCapital: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  additionalCapital: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  reserveCapital: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  deferredTaxLiabilities: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  longTermBankLoans: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  targetFunding: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  shortTermBankLoans: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  currentProvisions: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  deferredIncome: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  otherCurrentLiabilities: {
+    startOfPeriod: 0,
+    endOfPeriod: 0,
+  },
+  netIncomeFromProductSales: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  costOfGoodsSold: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  grossProfit: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  grossLoss: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  otherOperatingIncome: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  operatingProfit: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  operatingLoss: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  profitBeforeTax: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  lossBeforeTax: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  netProfit: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  netLoss: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  otherComprehensiveIncomeBeforeTax: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  incomeTaxRelatedToOtherComprehensiveIncome: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  otherComprehensiveIncomeAfterTax: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  averageAnnualNumberOfCommonShares: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  netProfitLossPerCommonShare: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  dividendsPerCommonShare: {
+    forTheReportingPeriod: 0,
+    fromTheReportingPeriodOfLastYear: 0,
+  },
+  termOfExistenceOfTheEnterprise: 0,
+  gradationOfProfitAndLossAnalysis: 0,
+  largestAmountOfCreditReceivedAndReturned: 0,
+  amountOfRequestedLoan: 0,
+  amountOfOwnFundsInTheInvestment: 0,
+  valueOfOwnLiquidAssets: 0,
+};
 
+const InputTable = () => {
   const [data, setData] = useState(initialState);
 
   const { save, isPending } = usePostReport();
@@ -196,7 +196,7 @@ const InputTable = () => {
     }
   };
 
-  const onClick = async () => {
+  const onClick = () => {
     save(data, {
       onSuccess: () => {
         setData(initialState);

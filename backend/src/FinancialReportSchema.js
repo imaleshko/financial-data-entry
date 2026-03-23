@@ -1,13 +1,25 @@
 import mongoose from "mongoose";
 
+const parseNumber = (value) => {
+  if (value === "") {
+    return 0;
+  }
+
+  return Number(value);
+};
+
 const balancePeriod = {
-  startOfPeriod: { type: Number, default: 0 },
-  endOfPeriod: { type: Number, default: 0 },
+  startOfPeriod: { type: Number, default: 0, set: parseNumber },
+  endOfPeriod: { type: Number, default: 0, set: parseNumber },
 };
 
 const reportingPeriod = {
-  forTheReportingPeriod: { type: Number, default: 0 },
-  fromTheReportingPeriodOfLastYear: { type: Number, default: 0 },
+  forTheReportingPeriod: { type: Number, default: 0, set: parseNumber },
+  fromTheReportingPeriodOfLastYear: {
+    type: Number,
+    default: 0,
+    set: parseNumber,
+  },
 };
 
 const financialReportSchema = new mongoose.Schema(
@@ -54,12 +66,28 @@ const financialReportSchema = new mongoose.Schema(
     netProfitLossPerCommonShare: reportingPeriod,
     dividendsPerCommonShare: reportingPeriod,
 
-    termOfExistenceOfTheEnterprise: { type: Number, default: 0 },
-    gradationOfProfitAndLossAnalysis: { type: Number, default: 0 },
-    largestAmountOfCreditReceivedAndReturned: { type: Number, default: 0 },
-    amountOfRequestedLoan: { type: Number, default: 0 },
-    amountOfOwnFundsInTheInvestment: { type: Number, default: 0 },
-    valueOfOwnLiquidAssets: { type: Number, default: 0 },
+    termOfExistenceOfTheEnterprise: {
+      type: Number,
+      default: 0,
+      set: parseNumber,
+    },
+    gradationOfProfitAndLossAnalysis: {
+      type: Number,
+      default: 0,
+      set: parseNumber,
+    },
+    largestAmountOfCreditReceivedAndReturned: {
+      type: Number,
+      default: 0,
+      set: parseNumber,
+    },
+    amountOfRequestedLoan: { type: Number, default: 0, set: parseNumber },
+    amountOfOwnFundsInTheInvestment: {
+      type: Number,
+      default: 0,
+      set: parseNumber,
+    },
+    valueOfOwnLiquidAssets: { type: Number, default: 0, set: parseNumber },
   },
   {
     timestamps: true,

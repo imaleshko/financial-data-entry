@@ -23,7 +23,7 @@ const Table1 = ({ data, handleChange, tableStructure }) => {
               <td>{row.label}</td>
               <td>
                 <input
-                  type="number"
+                  type="text"
                   name={`${row.key}.startOfPeriod`}
                   value={data[row.key].startOfPeriod}
                   onChange={handleChange}
@@ -33,7 +33,7 @@ const Table1 = ({ data, handleChange, tableStructure }) => {
               </td>
               <td>
                 <input
-                  type="number"
+                  type="text"
                   name={`${row.key}.endOfPeriod`}
                   value={data[row.key].endOfPeriod}
                   onChange={handleChange}

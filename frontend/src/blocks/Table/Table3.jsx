@@ -22,7 +22,7 @@ const Table3 = ({ data, handleChange, tableStructure }) => {
               <td>{row.label}</td>
               <td colSpan={2}>
                 <input
-                  type="number"
+                  type="text"
                   name={row.key}
                   value={data[row.key]}
                   onChange={handleChange}
